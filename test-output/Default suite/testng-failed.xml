@@ -3,11 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="xbox.testcases.XboxGamertagVerify">
+      <class name="xbox.testcases.XboxVerify">
         <methods>
           <include name="openNewGamer"/>
+          <include name="setUpBrowser"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- xbox.testcases.XboxGamertagVerify -->
+      </class> <!-- xbox.testcases.XboxVerify -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

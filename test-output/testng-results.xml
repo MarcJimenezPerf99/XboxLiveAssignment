@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="2" passed="1" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-28T21:02:14Z" name="Default suite" finished-at="2022-01-28T21:02:24Z" duration-ms="9278">
+  <suite started-at="2022-01-28T21:34:55Z" name="Default suite" finished-at="2022-01-28T21:35:02Z" duration-ms="7075">
     <groups>
       <group name="ChromeWin32">
-        <method signature="XboxGamertagVerify.openNewGamer()[pri:0, instance:xbox.testcases.XboxGamertagVerify@16ce702d]" name="openNewGamer" class="xbox.testcases.XboxGamertagVerify"/>
+        <method signature="XboxVerify.open()[pri:0, instance:xbox.testcases.XboxVerify@7b94089b]" name="open" class="xbox.testcases.XboxVerify"/>
+        <method signature="XboxVerify.openNewGamer()[pri:0, instance:xbox.testcases.XboxVerify@7b94089b]" name="openNewGamer" class="xbox.testcases.XboxVerify"/>
       </group> <!-- ChromeWin32 -->
       <group name="IEWin32">
-        <method signature="XboxGamertagVerify.openNewGamer()[pri:0, instance:xbox.testcases.XboxGamertagVerify@16ce702d]" name="openNewGamer" class="xbox.testcases.XboxGamertagVerify"/>
+        <method signature="XboxVerify.open()[pri:0, instance:xbox.testcases.XboxVerify@7b94089b]" name="open" class="xbox.testcases.XboxVerify"/>
+        <method signature="XboxVerify.openNewGamer()[pri:0, instance:xbox.testcases.XboxVerify@7b94089b]" name="openNewGamer" class="xbox.testcases.XboxVerify"/>
       </group> <!-- IEWin32 -->
     </groups>
-    <test started-at="2022-01-28T21:02:14Z" name="Default test" finished-at="2022-01-28T21:02:24Z" duration-ms="9278">
-      <class name="xbox.testcases.XboxGamertagVerify">
-        <test-method is-config="true" signature="setUpBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:xbox.testcases.XboxGamertagVerify@16ce702d]" started-at="2022-01-28T15:02:14Z" name="setUpBrowser" finished-at="2022-01-28T15:02:16Z" duration-ms="1308" status="PASS">
+    <test started-at="2022-01-28T21:34:55Z" name="Default test" finished-at="2022-01-28T21:35:02Z" duration-ms="7075">
+      <class name="xbox.testcases.XboxVerify">
+        <test-method is-config="true" signature="setUpBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:xbox.testcases.XboxVerify@7b94089b]" started-at="2022-01-28T15:34:55Z" name="setUpBrowser" finished-at="2022-01-28T15:34:57Z" duration-ms="1347" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,27 +41,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBrowser -->
-        <test-method signature="openNewGamer()[pri:0, instance:xbox.testcases.XboxGamertagVerify@16ce702d]" started-at="2022-01-28T15:02:16Z" name="openNewGamer" finished-at="2022-01-28T15:02:23Z" duration-ms="6817" status="PASS">
+        <test-method signature="open()[pri:0, instance:xbox.testcases.XboxVerify@7b94089b]" started-at="2022-01-28T15:34:57Z" name="open" finished-at="2022-01-28T15:35:00Z" duration-ms="3376" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openNewGamer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:xbox.testcases.XboxGamertagVerify@16ce702d]" started-at="2022-01-28T15:02:23Z" name="tearDown" finished-at="2022-01-28T15:02:23Z" duration-ms="0" status="FAIL">
+        </test-method> <!-- open -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:xbox.testcases.XboxVerify@7b94089b]" started-at="2022-01-28T15:35:00Z" name="tearDown" finished-at="2022-01-28T15:35:00Z" duration-ms="0" status="FAIL">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'PRFT-15050', ip: '10.128.204.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: driver.version: EventFiringWebDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}), userDataDir=C:\Users\MARC~1.JIM\AppData\Local\Temp\scoped_dir12452_1521523306}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:55065}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=97.0.4692.99, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: c3257159bb327b80e35a53dff07854c4]]>
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}), userDataDir=C:\Users\MARC~1.JIM\AppData\Local\Temp\scoped_dir25140_1262202623}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62679}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=97.0.4692.99, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 78b128ddc7aefb5cd8c96fa019f188e0]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'PRFT-15050', ip: '10.128.204.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: driver.version: EventFiringWebDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}), userDataDir=C:\Users\MARC~1.JIM\AppData\Local\Temp\scoped_dir12452_1521523306}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:55065}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=97.0.4692.99, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: c3257159bb327b80e35a53dff07854c4
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}), userDataDir=C:\Users\MARC~1.JIM\AppData\Local\Temp\scoped_dir25140_1262202623}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62679}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=97.0.4692.99, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 78b128ddc7aefb5cd8c96fa019f188e0
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
 	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)
@@ -125,7 +127,19 @@ Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field p
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- xbox.testcases.XboxGamertagVerify -->
+        <test-method is-config="true" signature="setUpBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:xbox.testcases.XboxVerify@7b94089b]" started-at="2022-01-28T15:35:00Z" name="setUpBrowser" finished-at="2022-01-28T15:35:00Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="openNewGamer()[pri:0, instance:xbox.testcases.XboxVerify@7b94089b]" started-at="2022-01-28T15:35:00Z" name="openNewGamer" finished-at="2022-01-28T15:35:00Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openNewGamer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:xbox.testcases.XboxVerify@7b94089b]" started-at="2022-01-28T15:35:00Z" name="tearDown" finished-at="2022-01-28T15:35:02Z" duration-ms="2040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- xbox.testcases.XboxVerify -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
