@@ -14,7 +14,7 @@
 			</run>
 		</groups>
 		<packages>
-			<package name="xbox.testcases.search" />
+			<package name="xbox.testcases"/>
 		</packages>
 	</test>
 </suite>
