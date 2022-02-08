@@ -19,13 +19,13 @@ pipeline {
         stage("deploy") {
             steps {
                 echo 'deploying the app'
-                sh 'java -jar C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT'
+                java -jar 'C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT'
             }
         }
     }
     post {
         always {
-            junit 'C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/surefire-reports/*.xml'
+            // junit 'C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/surefire-reports/*.xml'
         }
     }
 }
