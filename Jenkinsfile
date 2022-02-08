@@ -27,11 +27,10 @@ pipeline {
                 //sh 'java -jar C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT.jar'
             }
         }
+    } 
+    post {
+        always {
+            junit 'target/surefire-reports/*.xml'
+        }
     }
-    
-    // post {
-    //     always {
-    //         junit "allowEmptyResults: true, skipMarkingBuildUnstable: true, skipPublishingChecks: true, testResults: 'C:\\Users\\Marc.Jimenez\\.jenkins\\workspace\\Xbox-Pipeline_master\\test-output\\junitreports\\*.xml'"
-    //     }
-    // }
 }
