@@ -19,6 +19,7 @@ pipeline {
         stage("deploy") {
             steps {
                 echo 'deploying the app'
+                java -jar C:\Users\Marc.Jimenez\.jenkins\workspace\Xbox-Pipeline_master\target
             }
         }
     }
