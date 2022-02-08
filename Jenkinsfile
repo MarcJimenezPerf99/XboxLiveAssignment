@@ -25,7 +25,7 @@ pipeline {
     }
     post {
         always {
-            "junit allowEmptyResults: true, skipMarkingBuildUnstable: true, skipPublishingChecks: true, testResults: 'C:\\Users\\Marc.Jimenez\\.jenkins\\workspace\\Xbox-Pipeline_master\\test-output\\junitreports'"
+            junit "allowEmptyResults: true, skipMarkingBuildUnstable: true, skipPublishingChecks: true, testResults: 'C:\\Users\\Marc.Jimenez\\.jenkins\\workspace\\Xbox-Pipeline_master\\test-output\\junitreports\*.xml'"
         }
     }
 }
