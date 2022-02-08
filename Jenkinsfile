@@ -19,13 +19,13 @@ pipeline {
         stage("deploy") {
             steps {
                 echo 'deploying the app'
-                sh 'java -jar C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT.jar'
+                //sh 'java -jar C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT.jar'
             }
         }
     }
-    // post {
-    //     always {
-    //         // junit 'C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/surefire-reports/*.xml'
-    //     }
-    // }
+    post {
+        always {
+            junit "allowEmptyResults: true, skipPublishingChecks: true, testResults: 'target/surefire-reports/*.xml'"
+        }
+    }
 }
