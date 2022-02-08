@@ -7,13 +7,13 @@ pipeline {
         stage("build") {
             steps {
                 echo 'build the app in this step'
-                bat 'mvn -B -DskipTests clean package'
+                sh 'mvn -B -DskipTests clean package'
             }
         }
         stage("test") {
             steps {
                 echo 'Run tests here'
-                bat 'mvn test'
+                sh 'mvn test'
             }
         }
         stage("deploy") {
