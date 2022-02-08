@@ -15,6 +15,11 @@ pipeline {
                 echo 'Run tests here'
                 sh 'mvn test'
             }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
+                }
+            }
         }
         stage("deploy") {
             steps {
@@ -23,9 +28,10 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            junit "allowEmptyResults: true, skipMarkingBuildUnstable: true, skipPublishingChecks: true, testResults: 'C:\\Users\\Marc.Jimenez\\.jenkins\\workspace\\Xbox-Pipeline_master\\test-output\\junitreports\\*.xml'"
-        }
-    }
+    
+    // post {
+    //     always {
+    //         junit "allowEmptyResults: true, skipMarkingBuildUnstable: true, skipPublishingChecks: true, testResults: 'C:\\Users\\Marc.Jimenez\\.jenkins\\workspace\\Xbox-Pipeline_master\\test-output\\junitreports\\*.xml'"
+    //     }
+    // }
 }
