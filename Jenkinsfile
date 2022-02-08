@@ -25,7 +25,7 @@ pipeline {
     }
     post {
         always {
-            junit "allowEmptyResults: true, skipPublishingChecks: true, testResults: '**/target/surefire-reports/*.xml'"
+            junit "allowEmptyResults: true, skipPublishingChecks: true, testResults: 'Xbox-Pipeline_master/target/surefire-reports/*.xml'"
         }
     }
 }
