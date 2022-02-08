@@ -19,7 +19,7 @@ pipeline {
         stage("deploy") {
             steps {
                 echo 'deploying the app'
-                java -jar /.jenkins/workspace/Xbox-Pipeline_master/target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT
+                sh 'java -jar target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT'
             }
         }
     }
