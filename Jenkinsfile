@@ -23,9 +23,9 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            // junit 'C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/surefire-reports/*.xml'
-        }
-    }
+    // post {
+    //     always {
+    //         // junit 'C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/surefire-reports/*.xml'
+    //     }
+    // }
 }
