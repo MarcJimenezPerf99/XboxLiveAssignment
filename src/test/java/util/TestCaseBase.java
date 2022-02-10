@@ -302,6 +302,7 @@ public class TestCaseBase{
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--headless");
+		chromeOptions.addArguments("--no-sandbox");
 		if (onGrid.equals("false")){driver_original = new ChromeDriver(chromeOptions);}
 		else{
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
