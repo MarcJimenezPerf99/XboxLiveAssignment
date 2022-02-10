@@ -31,7 +31,7 @@ pipeline {
         stage("deploy") {
             steps {
                 echo 'deploying the app'
-                cleanWs()
+                // cleanWs()
                 // sh 'java -jar target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT.jar'
             }
         }
