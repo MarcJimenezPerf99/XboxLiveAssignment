@@ -4,6 +4,13 @@ pipeline {
         maven 'Maven3'
     }
     stages {
+        stage ('Clone SCM') {
+            steps {
+                echo 'clone the repo'
+                sh 'rm -fr Xbox-Pipeline'
+                sh 'git clone https://github.com/MarcJimenezPerf99/XboxLiveAssignment.git'
+            }
+        }
         stage("build") {
             steps {
                 echo 'build the app in this step'
