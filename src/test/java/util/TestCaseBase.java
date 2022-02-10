@@ -10,6 +10,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -299,6 +300,8 @@ public class TestCaseBase{
 	private void setUpChromeWin32(String onGrid) throws Exception {
 		File file = new File("/usr/bin/chromedriver");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--headless");
 		if (onGrid.equals("false")){driver_original = new ChromeDriver();}
 		else{
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
