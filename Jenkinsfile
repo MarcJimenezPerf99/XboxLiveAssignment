@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo 'clone the repo'
                 echo 'Testing'
-                sh 'rm -fr Xbox-Pipeline'
+                sh 'rm -fr XboxLiveAssignment'
                 sh 'git clone https://github.com/MarcJimenezPerf99/XboxLiveAssignment.git'
             }
         }
