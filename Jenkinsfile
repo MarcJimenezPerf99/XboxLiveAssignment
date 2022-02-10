@@ -13,13 +13,13 @@ pipeline {
         stage("test") {
             steps {
                 echo 'Run tests here'
-                sh 'mvn test'
+                // sh 'mvn test'
             }
-            post {
-                success {
-                    archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
-                }
-            }
+            // post {
+            //     success {
+            //         archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
+            //     }
+            // }
         }
         stage("deploy") {
             steps {
