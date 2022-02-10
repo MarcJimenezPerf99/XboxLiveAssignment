@@ -275,7 +275,7 @@ public class TestCaseBase{
 	 * @throws Exception
 	 */
 	private void setUpIEWin32(String onGrid) throws Exception {
-		File file = new File("./lib/IEDriverServerNew.exe");
+		File file = new File("lib/IEDriverServerNew.exe");
 		System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
 		
 		if (onGrid.equals("false")){
@@ -297,7 +297,7 @@ public class TestCaseBase{
 	 * @throws Exception
 	 */
 	private void setUpChromeWin32(String onGrid) throws Exception {
-		File file = new File("./lib/chromedriver.exe");
+		File file = new File("lib/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		if (onGrid.equals("false")){driver_original = new ChromeDriver();}
 		else{
