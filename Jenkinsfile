@@ -34,8 +34,21 @@ pipeline {
                 // cleanWs()
                 // sh 'java -jar target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT.jar'
             }
-        }
+        }\
     } 
+    post {
+        success {
+            echo "Successful build"
+            mail bcc: '', body: '''Build: $BUILD_NUMBER
+            Build ID: $BUILD_ID
+            Build URL: $BUILD_URL
+            Job Name: $JOB_NAME
+
+            Successfully ran!
+
+            ''', cc: '', from: '', replyTo: '', subject: 'XBOX PIPELINE: SUCCESSFUL JOB', to: 'marcjimenez999@gmail.com'
+        }
+    }
     // post {
     //     always {
     //         junit 'target/surefire-reports/*.xml'
