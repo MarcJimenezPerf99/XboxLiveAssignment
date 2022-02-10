@@ -39,11 +39,12 @@ pipeline {
     post {
         success {
             echo "Successful build"
-            echo "Sending email"
-            mail bcc: '', body: '''Build: $BUILD_NUMBER
-            Build ID: $BUILD_ID
-            Build URL: $BUILD_URL
-            Job Name: $JOB_NAME
+            echo "Sending email..."
+            mail bcc: '', body: '''
+            Build: ${BUILD_NUMBER}
+            Build ID: ${BUILD_ID}
+            Build URL: ${BUILD_URL}
+            Job Name: ${JOB_NAME}
 
             Successfully ran!
 
