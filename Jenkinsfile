@@ -20,18 +20,18 @@ pipeline {
         stage("test") {
             steps {
                 echo 'Run tests here'
-                sh 'mvn test'
+                // sh 'mvn test'
             }
-            post {
-                success {
-                    archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
-                }
-            }
+            // post {
+            //     success {
+            //         archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
+            //     }
+            // }
         }
         stage("deploy") {
             steps {
                 echo 'deploying the app'
-                //sh 'java -jar C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT.jar'
+                sh 'java -jar C:/Users/Marc.Jimenez/.jenkins/workspace/Xbox-Pipeline_master/target/PerficientGDCSeleniumFrameworkMaven-0.0.1-SNAPSHOT.jar'
             }
         }
     } 
